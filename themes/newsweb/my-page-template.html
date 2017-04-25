@@ -1,0 +1,451 @@
+<div style="padding: 0 15px 0;">
+<script>
+	
+    $('.material-button-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('.option').toggleClass('scale-on');
+    });
+</script>
+
+
+
+
+
+
+
+<div id="content" class="content list-template">
+    
+	<div class="row" style="padding:0px;">
+         
+         
+                                    <!-- Nav tabs -->
+                                    <ul style="box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;" class="nav nav-tabs" role="tablist">
+                                        <li style="padding-left:0; padding-right:0;text-align:center;" role="presentation" class="active col-xs-3"><a style="" href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Portfolio</a></li>
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-2"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Skill</a></li>
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Contact</a></li>
+ <li style="padding-left:0; padding-right:0; text-align:left;" class="col-xs-1"><a href="#"><h1 style="line-height:0;margin:0;border:0;color:white;font-weight:500;opacity:0.8;font-size:16px;" class="fa fa-home"></h1></a></li>
+                                                                      
+								   </ul>
+
+                                    <!-- Tab panes -->
+									
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home"> <img style="width:100%;" class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/header.jpg"> <div style="padding-bottom:0;" class="p20"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/website.png"> <h2>static / dynamic / e-commerce</h2> <p><span class="fsi">Sono una giovane web designer</span><br> Investo continuamente nella mia formazione per offrire servizi sempre migliori.</p> <hr> <h2 class="fs35">Contattami</h2><p>Per sapere di più su di me e sul mio lavoro oppure visita il mio sito web.</p></div>
+										<div class="col-xs-12" style="padding:0px 0 10px;"><div class="pulsante"><p style="text-align:left;margin:0;"><span class="fa fa-globe c99"></span><b>Sito</b> www.annamalfi.it </p></div></div>
+										<div class="col-xs-12" style="padding:0px 0 10px;"><div class="pulsante"><p style="text-align:left;margin:0;"><span class="fa fa-phone c99"></span><b>Numero</b> +3345388111</p></div></div>
+                                        <div class="col-xs-12" style="padding:0px 0 10px;"><div class="pulsante"><p style="text-align:left;margin:0;"><span class="fa fa-envelope c99"></span><b>E-mail</b> info@annamalfi.it</p></div><br><br><br><br><br></div>
+										<div class="pf"><div class="col-md-4 col-md-offset-4">
+        <div class="material-button-anim">
+          <ul class="list-inline" id="options">
+            <li class="option">
+              <button class="material-button option1" type="button">
+                <a style="color:white;" href="tel:+393345388111"><span class="fa fa-phone" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option2" type="button">
+               <a style="color:white;" href="mailto:info@annamalfi.it"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option3" type="button">
+              <a style="color:white;" href="#" onClick="window.open('http://www.annamalfi.it/','_system','location=yes');return false;">  <span class="fa fa-globe" aria-hidden="true"></span> </a>
+              </button>
+            </li>
+          </ul>
+          <button class="material-button material-button-toggle" type="button">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+	  <div class="bottom-bar"><div class="col-xs-2"><a href="#" onClick="window.open('https://www.linkedin.com/in/anna-amalfi-a8307b142/','_system','location=yes');return false;"><span class="fa fa-linkedin c9"></span></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span></a></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img width="28px" src="<%= TemplateTags.getThemePath() %>/img/behance1.png"></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span></a></div>
+	  <div class="clearfix"></div></div></div>
+										</div>
+										
+                                        <div role="tabpanel" class="tab-pane" id="profile"><!-- Card Projects -->
+      <div class="p20">  <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item1.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Questo è il sito di un allevamento di chow chow, è stato realizzato con wordpress.</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('http://www.conteadidanstef.it/','_system','location=yes');return false;"  class="btn btn-success btn-gradient">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item2.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Portfolio online di un fotografo, creato anch'esso con wordpress</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('http://www.maurocangemi.com/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item7.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Realizzazione grafica di Tiles puzzle, un divertente gioco per android. Provalo subito!</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('https://play.google.com/store/apps/details?id=com.MicheleIorio.TilesPuzzle','_system','location=yes');return false;" class="btn btn-success btn-gradient">Scarica l'app</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item4.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Questa onepage è il sito vetrina di un dj, programmato in html e css.</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('http://www.djeliomilani.it/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item5.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Manutenzione e aggiornamento di un sito di vendita di moto anch'esso vetrina in html e css </p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('http://www.benellinapoli.com/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+		<div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item8.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Sito di un ristorante, realizzato in html e css con la sezione blog su cms wordpress.</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('http://www.ostariallatorre.it/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		<div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item9.PNG">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Modifiche (quali creazione di pagine e contenuti) e aggiornamenti per solo10click.it, unico sito in php su cui abbia mai lavorato. </p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('http://www.solo10click.it/index.php?p=home','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		<div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item0.jpg">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Realizzazione lato grafico di un altro gioco per android basato su un classico solitario napoletano </p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="#" onClick="window.open('https://play.google.com/store/apps/details?id=com.MicheleIorio.SolitarioNapoletano2','_system','location=yes');return false;" class="btn btn-success btn-gradient">Scarica l'app</a>
+                   
+                </div>
+            </div>
+        </div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br></div>
+			<div class="pf"><div class="col-md-4 col-md-offset-4">
+        <div class="material-button-anim">
+          <ul class="list-inline" id="options">
+            <li class="option">
+              <button class="material-button option1" type="button">
+                <a style="color:white;" href="tel:+393345388111"><span class="fa fa-phone" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option2" type="button">
+               <a style="color:white;" href="mailto:info@annamalfi.it"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option3" type="button">
+               <a style="color:white;" href="#" onClick="window.open('http://www.annamalfi.it/','_system','location=yes');return false;"> <span class="fa fa-globe" aria-hidden="true"></span></a>
+              </button>
+            </li>
+          </ul>
+          <button class="material-button material-button-toggle" type="button">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+	  <div class="bottom-bar"><div class="col-xs-2"><a href="#" onClick="window.open('https://www.linkedin.com/in/anna-amalfi-a8307b142/','_system','location=yes');return false;"><span class="fa fa-linkedin c9"></span></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span></a></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img width="28px" src="<%= TemplateTags.getThemePath() %>/img/behance1.png"></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span></a></div>
+	  <div class="clearfix"></div></div></div>
+		</div>
+		
+                                        <div role="tabpanel" class="tab-pane" id="messages"><img style="width:100%;" class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/skill.png"><div class="p20"><p>- Ottima conoscenza di Html e Css <br> - Ottima conoscenza del cms Wordpress e plugin <br> - Buona conoscenza di Joomla e Prestashop <br> - Buona conoscenza di Illustrator, Photoshop, Dreamweaver <br> - Ottima capacità impaginazione contenuti <br> - Conoscenza base SEO <br> - Ottima conoscenza del framework Bootstrap <br>- Cura del dettaglio</p></div><br><br><br>
+											<div class="pf"><div class="col-md-4 col-md-offset-4">
+        <div class="material-button-anim">
+          <ul class="list-inline" id="options">
+            <li class="option">
+              <button class="material-button option1" type="button">
+                <a style="color:white;" href="tel:+393345388111"><span class="fa fa-phone" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option2" type="button">
+               <a style="color:white;" href="mailto:info@annamalfi.it"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option3" type="button">
+               <a style="color:white;" href="#" onClick="window.open('http://www.annamalfi.it/','_system','location=yes');return false;"> <span class="fa fa-globe" aria-hidden="true"></span></a>
+              </button>
+            </li>
+          </ul>
+          <button class="material-button material-button-toggle" type="button">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+	  <div class="bottom-bar"><div class="col-xs-2"><a href="#" onClick="window.open('https://www.linkedin.com/in/anna-amalfi-a8307b142/','_system','location=yes');return false;"><span class="fa fa-linkedin c9"></span></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span></a></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img width="28px" src="<%= TemplateTags.getThemePath() %>/img/behance1.png"></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span></a></div>
+	  <div class="clearfix"></div></div></div>
+										</div>
+										
+                                        <div role="tabpanel" class="tab-pane p20" id="settings"><p style="text-align:justify;margin:0;">Compila il form per porre domande su questa applicazione, per segnalazioni, per diventare scrittore, per consigli su come migliorarla, per informazioni su di me, per richieste di preventivo e altro.</p>
+										
+										
+									
+				 	<div style="width:90px;height:90px;" class="user-page"><span style="background-color: #f7f5ee;border-color:#999;color:#999;padding: 15px 15px;" id="user" class="fa fa-envelope"></span></div>
+			
+			 <div style="margin-top:-40px;" class="col-md-6 col-md-offset-3">
+            <div class="card">
+                
+                
+                <div class="card-content">
+                    
+					  <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+              <div class="form-group">
+                <div class="controls">
+				<label>Nome</label>
+                  <input type="text" id="name" class="form-control1" placeholder="Mario_94" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">		
+                <div class="controls">
+				  <label>Email</label>
+                  <input type="email" class="email form-control1" id="email" placeholder="mariorossi@gmail.com" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">			   
+                <div class="controls">
+				<label>Oggetto</label>
+                  <input type="text" id="msg_subject" class="form-control1" placeholder="Richiesta informazione" required data-error="Please enter your message subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+				<label>Messaggio</label>
+                  <textarea id="message" rows="7" placeholder="Questo è un testo segnaposto. Esplicita qui la tua richiesta" class="form-control1" required data-error="Write your message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>  
+              </div>
+
+              <button type="submit" id="submit" class="btn btn-success btn-gradient"></i> Invia messaggio</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div> 
+              <div class="clearfix"></div>   
+
+            </form>  
+			
+					
+					
+                </div>
+                
+               
+            </div>
+        </div>
+
+
+
+
+			
+			
+
+			
+					
+	
+										
+										
+										
+										</div>
+                                    </div>
+
+
+
+
+  
+
+
+
+
+                                </div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+$( '#meiu' ).hide();
+			$( '#go-back' ).show();
+});
+</script>
+
+ <script type="text/javascript">
+  
+ $("#contactForm").on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        formError();
+        submitMSG(false, "Did you fill in the form properly?");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
+
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var msg_subject = $("#msg_subject").val();
+    var message = $("#message").val();
+
+
+    $.ajax({
+        type: "POST",
+        url: "http://www.maurocangemi.com/prova/form-process.php",
+        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false,text);
+            }
+        }
+    });
+}
+
+function formSuccess(){
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Message Submitted!")
+}
+
+function formError(){
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
+
+function submitMSG(valid, msg){
+    if(valid){
+        var msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        var msgClasses = "h3 text-center text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
+ 
+ </script>
+ 
+ 
+ 
+ 
+ 
+   

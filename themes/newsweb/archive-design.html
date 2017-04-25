@@ -1,0 +1,76 @@
+<!--
+ * Content is enclosed in <div id="app-content-wrapper"><div id="app-screen"></div></div>
+ * Subhead: is added by add-custom-data.php in the theme's php folder / It expects that the post has a subhead custom field
+ * Handler for image loading error: displayDefaultImage() added in functions.js as a template's parameter
+-->
+
+<script>
+$(document).ready(function () {
+ 
+  $(".spazioo").click(function(){
+	 $('.search-container').css({
+		 "display": "none"
+		  
+	    
+	  });
+	  $(".spazioo").removeClass('active');
+	 
+
+
+	});
+ 
+ 
+ 
+ 
+ 
+ 	$('#class-search,#refresh-button').css({
+		 "display": "block"    
+	  });
+ 
+ 
+ 
+
+ 
+
+	});
+</script>
+<img style="width:100%;" class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/bg2.jpg">
+<div class="container-fluid">
+
+<div class="spazioo"></div>
+
+<% if( posts.length ){ %>
+      <ul class="mt-57" id="default">
+	  <div style="z-index:9999;position: relative;margin-bottom: 40px;" class="search-container">
+    <form id="search-form">
+            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
+</div>
+            <% _.each( posts, function( post ){ %>
+                  <% var nb_comments = post.nb_comments %>
+                  <li style="margin-bottom:20px;" class="col-xs-6 col-sm-4">
+				  <div style="padding:5px;background-color:white;border-radius:5px">
+				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
+						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment archiv-social"><%= nb_comments %></div><img class="media-object pull-left" style="width: 100%; height: auto; margin-bottom:5px;margin-top: -39px;border-radius: 5px;" src="<%= post.thumbnail.src %>"></a>
+					<% } %>	
+					
+                        <h2 style="padding:0;margin:0;">
+                              <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a>
+                              
+                        </h2>
+                    
+                        <span style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
+               </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span>
+						    <p style="margin:0;font-style:italic;font-size:13px;"><%= post.excerpt %></p>
+					</div>		
+                  </li>
+            <% }); %>
+			<div class="clearfix"></div>
+      </ul>
+<% }else{ %>
+      <p>No post found!</p>
+<% } %>
+
+
+  <div class="cerchio"><a href="#chat"><span style="color:white;" class="fa fa-comments-o fs22"></span></a></div>
+  </div>

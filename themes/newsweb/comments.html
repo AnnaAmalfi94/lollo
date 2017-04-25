@@ -1,0 +1,45 @@
+<div style="width:100%;margin-bottom:20px;border-bottom: 1px solid #DDD;font-size: 14px;color: #666;background-color:#4285F4;box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;">
+<div style="float:left;" class="container-fluid">
+<h1 style="border:0;color:white;font-weight:500;opacity:0.8;"> COMMENTI </h1></div> <div style="float:right;" class="container-fluid"><h1 style="border:0;color:white;font-weight:500;opacity:0.8;"> (<%= post.nb_comments %>) </h1></div><div class="clearfix"></div></div>
+
+
+<div class="container-fluid">
+<div id="post-comments-list">
+
+    <ol style="padding:0px 0 20px;margin-bottom:0;" class="breadcrumb">
+        <li style="color:#777;">Articolo: <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a></li>
+    </ol>
+    <% if(comments.length){ %>
+        <ul style="margin-bottom:20px;" class="media-list">
+            <% _.each( comments, function( comment ){ %>
+                <li class="media" style="padding-left:<% print((comment.depth)*20) %>px">
+                    <div class="media-body">
+					<table><tr><th><img style=" width:35px; height:35px; border-radius:35px; margin-right:10px;" src="<%= comment.gravatar_image_link %>"></th><th>
+                       <div style="" class="before thb"> <h4 style="margin-bottom:0;" class="media-heading"><%= comment.author %>&nbsp;<small> <%= TemplateTags.formatDate(comment.date,'d/m/Y') %></small></h4>
+                        <p style="margin:0;"><%= comment.content %></p></div></th></tr></table>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+    <% }else{ %>
+            <span id="icon-com" class="fa fa-pencil"></span> <p style="margin-bottom:20px;"> Nessun commento trovato. <br> Esprimi per primo la tua opinione!</p>
+    <% } %>
+    <form id="comment-form">
+        <div style="width:90%;float:left;" class="form-group">
+             
+           <div class="after"> <textarea name="content" cols="45" rows="8" class="form-control1" placeholder="Aggiungi un commento..."></textarea> </div>
+        </div>
+        <input type="hidden" name="post" value="<%= post.id %>" >
+       
+		<button type="submit" style="margin-top: 2px;background-color: transparent;border: 0;font-size: 32px;float:right;width:10%;text-align:left;" class="fa fa-chevron-circle-right chevron"></button>
+    </form>
+</div>
+
+
+
+
+
+
+
+  <div class="cerchio"><a href="#chat"><span style="color:white;" class="fa fa-comments-o fs22"></span></a></div>
+  </div>
